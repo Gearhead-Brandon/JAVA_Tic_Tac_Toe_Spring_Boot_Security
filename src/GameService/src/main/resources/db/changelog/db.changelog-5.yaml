@@ -1,0 +1,32 @@
+databaseChangeLog:
+    - changeSet:
+        id: addForeignKeys
+        author: gea
+        changes:
+          - addForeignKeyConstraint:
+              baseTableName: game
+              baseColumnNames: first_player_id
+              referencedTableName: player
+              referencedColumnNames: id
+              constraintName: fk_game_first_player
+
+          - addForeignKeyConstraint:
+              baseTableName: game
+              baseColumnNames: second_player_id
+              referencedTableName: player
+              referencedColumnNames: id
+              constraintName: fk_game_second_player
+
+          - addForeignKeyConstraint:
+              baseTableName: game
+              baseColumnNames: game_field_id
+              referencedTableName: game_field
+              referencedColumnNames: id
+              constraintName: fk_game_field
+
+          - addForeignKeyConstraint:
+              baseTableName: game
+              baseColumnNames: game_state_id
+              referencedTableName: game_state
+              referencedColumnNames: id
+              constraintName: fk_game_state

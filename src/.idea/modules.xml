@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AuthService/Tic-Tac-Toe.AuthService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AuthService/Tic-Tac-Toe.AuthService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameService/Tic-Tac-Toe.GameService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/GameService/Tic-Tac-Toe.GameService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gateway/Tic-Tac-Toe.Gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Gateway/Tic-Tac-Toe.Gateway.main.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: createGameState
+      author: gea
+      changes:
+        - createTable:
+            tableName: game_state
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    - primaryKey: true
+              - column:
+                  name: state
+                  type: CHAR(40)
+                  constraints:
+                    - nullable: false
+              - column:
+                  name: current_player_uuid
+                  type: UUID

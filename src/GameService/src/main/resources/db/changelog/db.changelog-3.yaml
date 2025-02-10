@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: createGameFieldTable
+      author: gea
+      changes:
+        - createTable:
+            tableName: game_field
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    - primaryKey: true
+              - column:
+                  name: field
+                  type: CHAR(1) array
+                  constraints:
+                    - nullable: false

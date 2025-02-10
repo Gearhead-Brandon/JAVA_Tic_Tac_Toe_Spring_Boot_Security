@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="moduleMapping">
+      <map>
+        <entry key="AuthService" value="game.auth.tictactoe.Tic-Tac-Toe.AuthService" />
+        <entry key="Discovery" value="game.discovery.tictactoe.Tic-Tac-Toe.Discovery" />
+        <entry key="GameService" value="game.security.tictactoe.Tic-Tac-Toe.GameService" />
+        <entry key="Gateway" value="game.gateway.tictactoe.Tic-Tac-Toe.Gateway" />
+        <entry key="Tic-Tac-Toe.Game-Service" value="Tic-Tac-Toe.Tic-Tac-Toe-Game-Service" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: createPlayersTable
+      author: gea
+      changes:
+        - createTable:
+            tableName: player
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    - primaryKey: true
+              - column:
+                  name: uuid
+                  type: UUID
+                  constraints:
+                    - nullable: false
+              - column:
+                  name: side
+                  type: CHAR(1)
+                  constraints:
+                    - nullable: false
+                    - check: side in ('X','O')
+              - column:
+                  name: move_strategy
+                  type: CHAR(15)
+                  constraints:
+                    - nullable: false

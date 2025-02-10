@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: createGamesTable
+      author: gea
+      changes:
+        - createTable:
+            tableName: game
+            columns:
+              - column:
+                  name: uuid
+                  type: UUID
+                  constraints:
+                    - primaryKey: true
+                    - nullable: false
+              - column:
+                  name: first_player_id
+                  type: BIGINT
+                  constraints:
+                    - nullable: false
+              - column:
+                  name: second_player_id
+                  type: BIGINT
+              - column:
+                  name: game_field_id
+                  type: BIGINT
+                  constraints:
+                    - nullable: false
+              - column:
+                  name: game_state_id
+                  type: BIGINT
+                  constraints:
+                    - nullable: false
